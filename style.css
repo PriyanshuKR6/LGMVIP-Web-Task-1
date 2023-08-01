@@ -6,7 +6,7 @@
 .main-container {
   width: 100%;
   height: 100vh;
-  background-color: rgb(255, 222, 180);
+  background-image: linear-gradient(to bottom, dodgerblue, rgba(135, 206, 250, 0.856), lightpink);
 }
 
 .main-heading {
@@ -21,25 +21,24 @@
 
 .wrapper {
   position: relative;
-  background-color: #a5ff4be8;
+  background-color: rgba(255, 255, 255, 0.1);
   left: 50%;
-  top: 20%;
+  top: 10%;
   transform: translateX(-50%);
   min-height: 30rem;
   overflow: auto;
-  width: 40rem;
-  border-radius: 10px;
+  width: 50rem;
+  border-radius: 20px;
   box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.4);
 }
 
 .form {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 25rem;
   margin: auto;
-  background-color: #ffd700;
   border-radius: 8px;
   box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.3);
 }
@@ -57,6 +56,10 @@ input {
 
 input::placeholder {
   color: lightgray;
+  border: none;
+}
+input:focus{
+  outline: none;
 }
 
 .input {
@@ -79,8 +82,8 @@ input::placeholder {
   margin-left: -1rem;
   cursor: pointer;
   display: block;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   padding: 8px 0.8em;
   position: relative;
   text-align: center;
@@ -102,10 +105,12 @@ input::placeholder {
 
 .list li {
   position: relative;
+  /* border: 1px dotted; */
   list-style-type: none;
+  margin: 8px;
   padding: 1rem;
-  border-top: dotted;
-  border-color: darkgray;
+  border-radius: 8px;
+  opacity: 0.8;
   font-family: cursive;
 }
 
